@@ -14,6 +14,7 @@ function verificar() {
         var idade = ano - Number(fano.value)
         // Element's' é usado pois estamos com mais de um parâmetro
         // O calculo será realizado com o ano atual, menos o informado
+        // ano recebe o ano atual, e o number(fano.value) recebe o ano informado
         
         var genero = ''
         var img = document.createElement('img')
