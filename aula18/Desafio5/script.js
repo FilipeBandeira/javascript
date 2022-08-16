@@ -25,10 +25,13 @@ function adicionar() {
     //Neste ponto irá verificar, em conformidade as duas funções anteriores, a primeira se o número está entre 1 e 100, e a segunda se o número já foi adicionado, caso não, irá adicionar com o push
     if(isNumero(num.value) && !inLista(num.value, valores)) {
         valores.push(Number(num.value))
+
         let item = document.createElement('option')
+    //Criando um elemento dinamico  
         item.text = `Valor ${num.value} adicionado.`
         lista.appendChild(item)
         res.innerHTML = ''
+    // Para recomeçar 
     } else {
         window.alert(`Valor inválido ou já encontrado na lista.`)
     }
