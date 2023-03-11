@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prinmeiros passo com DOM</title>
+    <title>Primeiros passo com DOM</title>
     <style>
         body {
             background: rgb(68, 125, 199);
@@ -14,20 +14,21 @@
     </style>
 </head>
 <body>
-    <h1>Iniciando estudos DOM</h1>
+    <h1>Iniciando os estudos DOM</h1>
 
     <p>Aqui vai o resultado</p>
-    <p>Aprensendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
     <div id="msg">Clique em mim</div>
+
     <script>
         var corpo = window.document.body
-        var p1 = window.document.getElementsByTagName('p')[1]
+        var p1 = window.document.getElementsByTagName('p')[1] //Seletor por marca, p - 1 (1º parágrafo)
 
         /*var d = window.document.getElementById('msg')
         d.style.background = 'green'
         d.innerText = 'Estou aguardando...'*/
 
-        var d = window.document.querySelector('div#msg')
+        var d = window.document.querySelector('div#msg') //seletor
         d.style.background = 'blue'
     </script>
 </body>
