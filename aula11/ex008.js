@@ -1,7 +1,7 @@
 var vel = 50.5
 console.log(`A velocidade do seu carro é ${vel}km/h`)
 
-if (vel > 60) {
+if (vel > 60) { //Condição Simples com If/Else
     console.log(`Você ultrapassou a velocidade permitida. Será multado!`)
 }
 

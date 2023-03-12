@@ -1,4 +1,4 @@
-var pais = 'Brasil'
+var pais = 'Brasil' //Condição Simples
 console.log(`Vivendo em ${pais}`)
 
 if (pais != 'Brasil') {
