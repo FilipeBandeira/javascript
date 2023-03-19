@@ -1,3 +1,6 @@
+//Para valores fixos
+//Caracterizado por um losango
+
 var agora = new Date()
 var diaSem = agora.getDay()
 

@@ -1,3 +1,5 @@
+//If/Else é caracterizado por um losango
+
 var agora = new Date()
 var hora = agora.getHours()
 
