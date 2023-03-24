@@ -11,7 +11,7 @@ function carregar() {
 
     if (hora >= 0 && hora < 12) {
         img.src = 'imagens/manhã.jpg'
-        document.body.style.background = '#e2cd9f'
+        document.body.style.background = '#e2cd9f' //Usando o CSS dentro de JS dinamicamente
         edu.innerHTML = `Bom dia!`
     }else if (hora >= 12 && hora <= 18) {
         img.src = 'imagens/tarde.jpg'
