@@ -1,10 +1,10 @@
 let num = document.querySelector('input#fnum')
 let lista = document.querySelector('select#flista')
 let res = document.querySelector('div#res')
-let valores = []
+let valores = [] // Análise de dados apartir de um array
 
 // Irá receber o número e verificar se estar entre 1 e 100
-function isNumero(n) {
+function isNumero(n) { //2
     if(Number(n) >= 1 && Number(n) <= 100) {
         return true
     } else {
@@ -13,7 +13,7 @@ function isNumero(n) {
 }
 
 // Irá verificar qual a posição do número no array, com o indexOf
-function inLista (n, l) {
+function inLista (n, l) { //2
     if (l.indexOf(Number(n)) != -1) {
         return true
     } else {
@@ -21,12 +21,12 @@ function inLista (n, l) {
     }
 }
 
-function adicionar() {
+function adicionar() { //1
     //Neste ponto irá verificar, em conformidade as duas funções anteriores, a primeira se o número está entre 1 e 100, e a segunda se o número já foi adicionado, caso não, irá adicionar com o push
     if(isNumero(num.value) && !inLista(num.value, valores)) {
         valores.push(Number(num.value))
 
-        let item = document.createElement('option')
+        let item = document.createElement('option') // O option serve para adcionar no select
     //Criando um elemento dinamico  
         item.text = `Valor ${num.value} adicionado.`
         lista.appendChild(item)
@@ -36,7 +36,7 @@ function adicionar() {
         window.alert(`Valor inválido ou já encontrado na lista.`)
     }
     num.value = ''
-    num.focus()
+    num.focus() // Para que depois de limpar o cursor irá aparecer
 }
 
 function finalizar() {
