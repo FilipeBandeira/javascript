@@ -55,6 +55,7 @@ function verificar() {
         }
 
         res.style.textAlign = 'center'
+        img.style.padding = '10pt';
         res.appendChild(img)
         //Este último é usado para conseguir aparecer a imagem
     }
